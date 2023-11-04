@@ -15,7 +15,12 @@
 
   // Array of object for generic ----------------------->
 
-  const user: GenericArray<{ name: string; age: number }> = [
+  type User = { // you can use this type name for simplify
+    name: string;
+    age: number;
+  };
+
+  const user: GenericArray<{ name: string; age: number } > = [
     {
       name: "abd",
       age: 100,
